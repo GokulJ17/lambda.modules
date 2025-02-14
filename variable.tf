@@ -13,13 +13,13 @@ variable "stop_event_name" {
 variable "start_schedule" {
   description = "Cron expression to start EC2 at 8:30 AM UTC"
   type        = string
-  default     = "cron(35 06 * * ? *)"
+  default     = "cron(55 10 * * ? *)"
 }
 
 variable "stop_schedule" {
   description = "Cron expression to stop EC2 at 11:00 PM UTC"
   type        = string
-  default     =  "cron(40 06 * * ? *)"
+  default     =  "cron(00 11 * * ? *)"
 }
 
 variable "start_lambda_name" {
